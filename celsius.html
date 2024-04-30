@@ -22,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
+
                         <li class="nav-item">
                             <a class="nav-link" href="fahrenheit.html">Fahrenheit to Celsius</a>
                         </li>
@@ -51,22 +51,26 @@
             <div class="row">
                 <div class="col">
                     <div>
-                        <label for="fahrenheitInput">Fahrenheit Temperature:</label>
-                        <input id="fahrenheitInput" type="text">                        
+                        <form>
+                            <label for="fahrenheitInput">Fahrenheit Temperature:</label>
+                            <input id="fahrenheitInput" type="text">
                     </div>
-                    
+
                     <div>
                         <input id="convertBtn" type="button" value="Convert">
-                        
-                    </div>     
+
+                    </div>
                     <div>
                         <label for="celsiusOutput">Celsius Temperature:</label>
-                        <input id="celsiusOutput" type="text" >     
-                        <input id="resetBtn" type="button" value="Reset">       
+                        <input id="celsiusOutput" type="text">
+                        <input type="reset" value="Reset">
                     </div>
+                    </form>
+
                     <div>
                         <p id="messagePara"></p>
                     </div>
+                </div>
             </div>
         </div>
 

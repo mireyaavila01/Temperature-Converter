@@ -21,19 +21,21 @@ function onConvertBtnClicked(){
 //calculation    
 
     let celsius = Number(celsiusInput.value);
-
+/*
 if (isNaN(celsiusInput)){
         fahrenheitOutput.value = "";
      messagePara.innerHTML = "Error celsius value is invalid";
-    return;   
+    return; 
     }
-    
+    */
+
+
     let fahrenheit = (celsius * (9/5) + 32);
 
 //the result
 
     fahrenheitOutput.value = fahrenheit;
 
-    messagePara.innerHTML = "";
+    messagePara.innerHTML = ""; 
 }
 

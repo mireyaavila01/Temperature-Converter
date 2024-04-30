@@ -22,12 +22,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="fahrenheit.html">Fahrenheit to Celsius</a>
+                            <a class="nav-link active" aria-current="page" href="fahrenheit.html">Fahrenheit to
+                                Celsius</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="celsius.html" >Celsius to Fahrenheit</a>
+                            <a class="nav-link" href="celsius.html">Celsius to Fahrenheit</a>
 
 
                         </li>
@@ -51,26 +52,27 @@
             <div class="row">
                 <div class="col">
                     <div>
-                        <label for="celsiusInput">Celsius Temperature:</label>
-                        <input id="celsiusInput" type="text">                        
+                        <form>
+                            <label for="celsiusInput">Celsius Temperature:</label>
+                            <input id="celsiusInput" type="text">
                     </div>
-                    
+
                     <div>
                         <input id="convertBtn" type="button" value="Convert">
-                        
-                    </div>     
-                    <div>
-                        <label for="fahrenheitOutput">Fahrenheit Temperature:</label>
-                        <input id="fahrenheitOutput" type="text" >     
-                        <input id="resetBtn" type="button" value="Reset">  
-                                   
+
                     </div>
+
+                    <label for="fahrenheitOutput">Fahrenheit Temperature:</label>
+                    <input id="fahrenheitOutput" type="text">
+                    <input type="reset" value="Reset">
+                    </form>
+
                     <div>
-                        <p id ="messagePara"></p>
+                        <p id="messagePara"></p>
                     </div>
                 </div>
+
             </div>
-        </div>
 
     </main>
 
@@ -83,8 +85,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src = "scripts/fahrenheit.js"></script>
-    
+    <script src="scripts/fahrenheit.js"></script>
+
 </body>
 
 </html>

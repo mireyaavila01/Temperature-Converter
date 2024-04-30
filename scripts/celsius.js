@@ -23,13 +23,13 @@ function onConvertBtnClicked(){
     let fahrenheit = Number(fahrenheitInput.value);
 
     
-
+    /*
     if (isNaN(fahrenheitInput)){
         celsiusOutput.value = "";
      messagePara.innerHTML = "Error fahrenheit value is invalid";
     return;   
     }
-    
+    */
  let celsius = (fahrenheit - 32 ) * (5 / 9);
 
 
