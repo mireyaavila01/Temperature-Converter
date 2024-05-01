@@ -4,38 +4,46 @@ const fahrenheitOutput = document.getElementById("fahrenheitOutput");
 const celsiusInput = document.getElementById("celsiusInput");
 
 const convertBtn = document.getElementById("convertBtn");
+const resetBtn = document.getElementById("resetBtn");
 
-    
+
 
 
 window.onload = init;
 
 
-function init () {
+function init() {
     convertBtn.onclick = onConvertBtnClicked;
+    resetBtn.onclick = onResetBtnClicked;
 
 }
 
-function onConvertBtnClicked(){
-     
-//calculation    
+function onConvertBtnClicked() {
 
-    let celsius = Number(celsiusInput.value);
-/*
-if (isNaN(celsiusInput)){
+    //calculation    
+
+
+    if (isNaN(celsiusInput.value)) {
         fahrenheitOutput.value = "";
-     messagePara.innerHTML = "Error celsius value is invalid";
-    return; 
+        messagePara.innerHTML = "Error celsius value is invalid";
+        return;
     }
-    */
 
-
-    let fahrenheit = (celsius * (9/5) + 32);
-
-//the result
+    else {
+        let celsius = Number(celsiusInput.value);
+        let fahrenheit = (celsius * (9 / 5) + 32);
+ 
 
     fahrenheitOutput.value = fahrenheit;
 
-    messagePara.innerHTML = ""; 
+    }
 }
+   
 
+
+
+function onResetBtnClicked() {
+    celsiusInput.value = "";
+    fahrenheitOutput.value = "";
+    messagePara.innerHTML = "";
+}
